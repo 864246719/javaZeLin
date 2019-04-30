@@ -1,0 +1,14 @@
+sout 
+Alt+回车 导入包,自动修正
+Alt+Insert 生成代码(如get,set方法,构造函数等)
+Ctrl+Shift+Space 自动补全代码
+Ctrl+空格 代码提示
+Shift+F6  重构-重命名
+Ctrl+X 删除行
+Ctrl+D 复制行
+Ctrl+/ 或 Ctrl+Shift+/  注释（// 或者/*...*/ ）
+
+shift + enter 另换一行编译
+CTRL+SHIFT+Z  向前(取消撤销)   
+Shift+F6，重命名 
+F5，复制 

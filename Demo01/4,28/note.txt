@@ -1,0 +1,71 @@
+======================final关键字
+1、修饰变量时：不可变的是变量的引用而非引用指向对象的内容，编译阶段存入调用类的常量池中
+2、被final修饰的方法，JVM会尝试为之寻求内联，这对于提升Java的效率是非常重要的。因此，假如能确定方法不会被继承，那么尽量将方法定义为final的。
+不可以被重写
+3、修饰类是，不可以被继承
+
+
+
+
+============================static关键字
+功能：修饰的东西该类所实现对象共享方法或属性
+
+1、static修饰成员：
+类加载后，属性分配一个空间（方法区），当对象或类调用修改后，会分配到内存空间
+2、static方法：
+被static修饰的方法，只能调用static修饰的方法/成员，不能用this/supper关键字
+3、单例设计模式：
+特点只能创建一个实例，
+由于static只加载一次，所以把new 对象放在static修饰的方法里，
+
+class Singleton{
+	
+private static Singleton instance=null;
+
+	private Singleton(){}
+	
+	public static Singleton getInstance(){
+		
+		if(instance==null){
+			
+			instance=new Singleton();
+		
+		}
+		
+		return instance;
+	
+	}
+
+}
+3、static代码块
+仅加载一次
+4、static与final结合使用表示的意思：
+变量：表示一旦赋值不能修改，并且通过类名可以访问。
+方法：static final修饰，表示该方法不可被覆盖，并且可以通过类名直接访问。
+
+
+
+Sting的发布方法
+
+访问修饰符：
+
+包
+找包位置
+属性默认值
+
+
+封装
+private
+继承   super(，，，);父亲变成自己的  hao
+	super. 父亲的东西 使用super.setName();
+
+this.setSex()????
+
+
+super关键字 
+子类构造中 super()和this()只能一个
+
+
+下节课 教接口调用
+
+背下来如何调用ui
